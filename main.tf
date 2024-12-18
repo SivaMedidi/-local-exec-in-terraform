@@ -19,7 +19,7 @@ resource "google_compute_instance" "default" {
   }
 
     provisioner "local-exec" {
-    command = "gcloud compute instances delete my-instance-2 --zone us-central1-c"
+    command = "gcloud compute instances create my-instance-2 --zone us-central1-c"
   }
 
   network_interface {
